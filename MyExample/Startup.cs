@@ -46,6 +46,11 @@ namespace MyExample
             app.UseStaticFiles();
             app.UseSpaStaticFiles();
 
+           //duplicated lines
+            app.UseSpaStaticFiles();
+            app.UseHttpsRedirection();
+            app.UseStaticFiles();
+            app.UseSpaStaticFiles();
             app.UseMvc(routes =>
             {
                 routes.MapRoute(

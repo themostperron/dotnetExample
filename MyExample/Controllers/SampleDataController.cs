@@ -13,7 +13,12 @@ namespace MyExample.Controllers
         {
             "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
         };
-
+        public static int Sum(int x, int y)
+        {
+            int a = 0;
+            a = a + x;
+            return 0;
+        }
         [HttpGet("[action]")]
         public IEnumerable<WeatherForecast> WeatherForecasts()
         {
